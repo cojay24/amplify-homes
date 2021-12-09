@@ -33,3 +33,5 @@ export { default as ContactUs } from "./ContactUs";
 export { default as CardE } from "./CardE";
 export { default as Features4x1 } from "./Features4x1";
 export { default as NavBar } from "./NavBar";
+export { default as CardBClaireCollection } from "./CardBClaireCollection";
+export { default as CardB } from "./CardB";

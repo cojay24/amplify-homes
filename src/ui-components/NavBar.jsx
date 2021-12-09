@@ -21,7 +21,7 @@ export default function NavBar(props) {
   return (
     <Flex
       padding="24px 32px 24px 32px"
-      backgroundColor="rgba(255,255,255,1)"
+      backgroundColor="rgba(87.71920502185822,86.23515665531158,160.43749898672104,1)"
       alignItems="center"
       gap="20px"
       width="1440px"

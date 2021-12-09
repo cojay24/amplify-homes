@@ -9,7 +9,7 @@ import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text } from "@aws-amplify/ui-react";
 export default function CardA(props) {
-  const { overrides: overridesProp, ...rest } = props;
+  const { home, overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
   return (
     <Flex
@@ -23,11 +23,12 @@ export default function CardA(props) {
       {...getOverrideProps(overrides, "Flex")}
     >
       <Image
-        width="320px"
         padding="0px 0px 0px 0px"
         alignSelf="stretch"
-        position="relative"
         shrink="0"
+        src={home?.image_url}
+        width="320px"
+        position="relative"
         height="400px"
         {...getOverrideProps(overrides, "Flex.Image[0]")}
       ></Image>
@@ -56,7 +57,7 @@ export default function CardA(props) {
           position="relative"
           fontWeight="400"
           direction="column"
-          children="Classic Long Sleeve T-Shirt"
+          children={home?.id}
           {...getOverrideProps(overrides, "Flex.Flex[0].Text[0]")}
         ></Text>
         <Text
